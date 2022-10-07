@@ -48,30 +48,30 @@
         </main>
 
         <footer class="footer-mobile">
-            <div class="footer__cards">
-                <div class="footer__card red-mobile-pic">
-                    <img src="/images/red-card-mobile-pic.svg" alt="Red">             
+            <div class="footer__cards-mobile">
+                <div class="footer__card-mobile redcard-mobile-pic">
+                    <img src="/images/redcard-mobile-pic.svg" alt="Red">             
                 </div> 
-                <div class="footer__card digital-mobile-pic">
+                <div class="footer__card-mobile digital-mobile-pic">
                     <img src="/images/digital-mobile-pic.svg" alt="Digital"> 
                 </div>
-                <div class="footer__card card3D-mobile-pic">
-                    <img src="/images/3d-mobile-pic.svg" alt="3D"> 
+                <div class="footer__card-mobile card3D-mobile-pic">
+                    <img src="/images/card3D-mobile-pic.svg" alt="3D"> 
                 </div>
-                <div class="footer__card painting-mobile-pic">
+                <div class="footer__card-mobile painting-mobile-pic">
                     <img src="/images/painting-mobile-pic.svg" alt="Painting"> 
                 </div>
-                <div class="footer__card art-mobile-pic">
+                <div class="footer__card-mobile art-mobile-pic">
                     <img src="/images/art-mobile-pic.svg" alt="Art"> 
                 </div>
-                <div class="footer__card sculpture-mobile-pic">
+                <div class="footer__card-mobile sculpture-mobile-pic">
                     <img src="/images/sculpture-mobile-pic.svg" alt="Sculpture"> 
                 </div>
-                <div class="footer__card craft-mobile-pic">
+                <div class="footer__card-mobile craft-mobile-pic">
                     <img src="/images/craft-mobile-pic.svg" alt="Craft"> 
                 </div>
-                <div class="footer__card drawing-mobile-pic">
-                    <img src="/images/drawing-mobile-pic.svg" alt=""> 
+                <div class="footer__card-mobile darkcard-mobile-pic">
+                    <img src="/images/darkcard-mobile-pic.svg" alt="Dark"> 
                 </div>
             </div>
         </footer> 
@@ -380,7 +380,7 @@ body {
 
 
 }
-.footer__cards {
+.footer__cards-mobile {
     position: absolute;
     bottom: 0px;
     display: flex;
@@ -389,7 +389,7 @@ body {
     justify-content: flex-start;
    
 }
-.footer__card {
+.footer__card-mobile {
     position: absolute;
     bottom: 0;
     display: flex;
@@ -397,7 +397,7 @@ body {
     justify-content: flex-start;
     align-items: flex-end;
 }
-.red-mobile-pic {
+.redcard-mobile-pic {
     left: -10px;
 }
 .digital-mobile-pic {
@@ -424,8 +424,8 @@ body {
     right: -5px;
     z-index: 80;
 }
-.drawing-mobile-pic {
-    right: -5px;
+.darkcard-mobile-pic {
+    right: -10px;
     z-index: -1;
 }
 

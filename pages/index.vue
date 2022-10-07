@@ -22,26 +22,25 @@
                     </p>
             </section>
             <section class="registration-form">
-               
                 <div class="users-form">
                      <div class="registration-form__label">
                         Incredible benefits for early students and teachers
                     </div>   
-                    <div class="tabs-wrapper">
-                        <div class="tab-student active">
+                <div class="tabs-wrapper">
+                    <div class="tab-student active">
                             I'am student
-                        </div>
-                        <div class="tab-teacher">
+                    </div>
+                <div class="tab-teacher">
                             I'am teacher 
-                        </div>          
+                    </div>          
                     </div>     
-                    <div class="content-wrapper">
+                <div class="content-wrapper">
                         <input type="email" placeholder="Email">        
                     </div> 
-                    <button type="button">
+                <button type="button">
                         Get a benefit <img src="/images/present-icon.svg" alt="Present-icon">
-                    </button> 
-                </div> 
+                </button> 
+                    </div> 
                 <div class="counter">
                     <div class="counter__number">
                         986 
@@ -52,43 +51,42 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="footer__cards">
-                <div class="footer__card">
-                    <img class="photograthy-pic" src="/images/photography-pic.svg" alt="Photography">            
+            <footer class="footer">
+                <div class="footer__cards">
+                    <div class="footer__card">
+                        <img class="photograthy-pic" src="/images/photography-pic.svg" alt="Photography">            
                 </div>    
-                <div class="footer__card">
-                    <img src="/images/art-pic.svg" alt="Art">
+                    <div class="footer__card">
+                        <img class="art-pic" src="/images/art-pic.svg" alt="Art">
                 </div>
-                 <div class="footer__card">
-                    <img src="/images/drawing-pic.svg" alt="Drawing">
+                    <div class="footer__card">
+                        <img class="drawing-pic" src="/images/drawing-pic.svg" alt="Drawing">
                 </div> 
+                    <div class="footer__card">
+                        <img class="digital-pic" src="/images/digital-pic.svg" alt="Digital">
+                        </div> 
                 <div class="footer__card">
-                    <img src="/images/digital-pic.svg" alt="Digital">
+                        <img class="painting-pic" src="/images/painting-pic.svg" alt="Painting">
                 </div> 
-                <div class="footer__card">
-                    <img class="painting-pic" src="/images/painting-pic.svg" alt="Painting">
+                    <div class="footer__card">
+                        <img class="design-pic" src="/images/design-pic.svg" alt="Design">
                 </div> 
-                <div class="footer__card">
-                    <img class="design-pic" src="/images/design-pic.svg" alt="Design-pic">
+                    <div class="footer__card">
+                        <img class="craft-pic" src="/images/craft-pic.svg" alt="Craft">
                 </div> 
-                <div class="footer__card">
-                    <img src="/images/craft-pic.svg" alt="Craft">
-                </div> 
-                <div class="footer__card">
-                    <img class="sculpture-pic" src="/images/sculpture-pic.svg" alt="Sculpture">
+                    <div class="footer__card">
+                        <img class="sculpture-pic" src="/images/sculpture-pic.svg" alt="Sculpture">
                 </div>
-                <div class="footer__card">
-                    <img src="/images/3d-pic.svg" alt="3D">
+                    <div class="footer__card">
+                        <img class="card3D" src="/images/card3D-pic.svg" alt="3D">
                 </div>
-                <div class="footer__card">
-                    <img src="/images/illustration-pic.svg" alt="Illustration">
+                    <div class="footer__card">
+                        <img clas="illustration-pic" src="/images/illustration-pic.svg" alt="Illustration">
+                    </div>
                 </div>
-            </div>
-        </footer>
-        <video ref="bgVideo" autoplay muted id="myVideo">
-            
-        </video>
+            </footer>
+                    <video ref="bgVideo" autoplay muted id="myVideo">
+                    </video>
 </template>
 <script>
 export default {
@@ -131,7 +129,6 @@ export default {
 
 </script>
 <style>
-
 @font-face {
     font-family: "Onest Regular";
     src: local("Onest Regular"),
@@ -164,15 +161,12 @@ export default {
     font-display: swap;
     font-style: thin;
 }
-
 body {
     background-color:#999;
     font-family: "Onest Regular", "Arial", sans-serif;
-    
 }
 *, *::before, *::after {
     box-sizing: inherit;
-
 }
 .container {
     max-width: 1920px;
@@ -182,8 +176,7 @@ body {
     display: flex;
     padding: 32px 0;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;   
 }
 .header__date-and-time {
     display: flex;
@@ -203,7 +196,6 @@ body {
 .intro {
     min-width: 696px;
 }
-
 .intro__title {
     width: 100%;
     font-weight: 500;
@@ -213,7 +205,6 @@ body {
     margin-bottom: 0;
     margin-top: 40px;
 }
-
 .intro__subtitle {
     font-size: 24px;
     line-height: 32px;
@@ -225,12 +216,16 @@ body {
     grid-template-columns: 473px 155px;
     background-color: transparent;
     grid-template-rows: 1fr;
-
+}
+.registration-form__label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
 }
 .users-form {
     background:
-        radial-gradient(circle at 100% 100%, rgba(0,0,0,0) 10px, rgba(18, 18, 18, 0.7) 8px),
-        radial-gradient(circle at 100% 0%, rgba(0,0,0,0) 10px, rgba(18, 18, 18, 0.7) 8px);
+    radial-gradient(circle at 100% 100%, rgba(0,0,0,0) 10px, rgba(18, 18, 18, 0.7) 8px),
+    radial-gradient(circle at 100% 0%, rgba(0,0,0,0) 10px, rgba(18, 18, 18, 0.7) 8px);
     background-position: bottom right, top right;
     background-size: 150% 50%;
     background-repeat: no-repeat;
@@ -238,11 +233,10 @@ body {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     padding: 20px;
-    
 } 
 .counter-wrapper {
     border-radius: 25px;
-}   
+}
 .counter {
     height: 100%;
     background:
@@ -263,6 +257,7 @@ body {
     font-family: "Onest Regular";
     flex-direction: column;
 }
+
 .counter__label {
     font-weight: 400;
     font-size: 14px;
@@ -279,9 +274,8 @@ body {
     padding: 2px;
     border-radius: 6px;
     height: 40px;
-
-   
 }
+
 .tab-student {
     font-weight: 500;
     font-size: 16px;
@@ -380,19 +374,20 @@ body {
     width: 100%;
 }
 .footer__cards {
+    display: flex;
     position: absolute;
     bottom: 0px;
-    display: flex;
-    width: 100%;
     align-items: flex-end;
-    justify-content: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    
 }
 .footer__card {
-    bottom: 0;
     display: flex;
-    margin-left: -121px;
+    margin-left: -123px;
     justify-content: space-between;
     align-items: flex-end;
+    bottom: 0;
 }
 .footer__card:first-child{
     margin-left: 0;
@@ -408,6 +403,9 @@ body {
 }
 .sculpture-pic {
     z-index: 100;
+}
+.card3D-pic {
+    z-index: 120;
 }
 #myVideo {
     position: fixed;
