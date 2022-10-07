@@ -89,6 +89,7 @@
                     </video>
 </template>
 <script>
+import { ref, onMounted } from "#imports"
 export default {
     setup() {
         let position = 0;
@@ -102,7 +103,6 @@ export default {
             bgVideo.value.load();
             bgVideo.value.play();
         };
-        let bgVideo = ref(null);
 
         let playlist = ["/video/1.mp4",
                     "/video/2.mp4",
@@ -113,14 +113,17 @@ export default {
                     "/video/7.mp4",
                     "/video/8.mp4",
                     "/video/9.mp4"];
-        /*if (bgValue) {
+        let bgVideo = ref();
+
+        onMounted(() => {
             setTimeout(() => {
                 bgVideo.value.addEventListener("ended", nextVideo, false);
                 bgVideo.value.src = playlist[position];
                 bgVideo.value.load();
                 bgVideo.value.play();
-            }, 1000);    
-        }*/
+            }, 1000);
+        })
+
         return {
             bgVideo
         }
@@ -139,27 +142,24 @@ export default {
 }
 @font-face {
     font-family: "Onest Medium";
-    src: local("Onest Medium")
+    src: local("Onest Medium"),
          url("/fonts/OnestMedium1602-hint.woff");
     font-weight: 400;
     font-display: swap;
-    font-style: medium;
 }
 @font-face {
     font-family: "Onest Bold";
-    src: local("Onest Bold")
+    src: local("Onest Bold"),
          url("/fonts/OnestBold1602-hint.woff");
     font-weight: 400;
     font-display: swap;
-    font-style: bold;
 }
 @font-face {
     font-family: "Onest Thin";
-    src: local("Onest Thin") 
+    src: local("Onest Thin"),
          url("/fonts/OnestThin1602-hint.woff");
     font-weight: 400;
     font-display: swap;
-    font-style: thin;
 }
 body {
     background-color:#999;
