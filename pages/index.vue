@@ -78,10 +78,10 @@
                         <img class="sculpture-pic" src="/images/sculpture-pic.svg" alt="Sculpture">
                 </div>
                     <div class="footer__card">
-                        <img class="card3D" src="/images/card3D-pic.svg" alt="3D">
+                        <img class="card3D-pic" src="/images/card3D-pic.svg" alt="3D">
                 </div>
                     <div class="footer__card">
-                        <img clas="illustration-pic" src="/images/illustration-pic.svg" alt="Illustration">
+                        <img class="illustration-pic" src="/images/illustration-pic.svg" alt="Illustration">
                     </div>
                 </div>
             </footer>
@@ -367,45 +367,94 @@ body {
 }
 .footer {
     display: flex;
-    background-color: aqua;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
+    flex-wrap: nowrap;
+    background-color: transparent;
+    justify-content: center;
+    padding: 0;
+    align-content: flex-end;
 }
 .footer__cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
     position: absolute;
     bottom: 0px;
-    align-items: flex-end;
-    justify-content: space-around;
     width: 100%;
-    
 }
 .footer__card {
     display: flex;
-    margin-left: -123px;
+    margin-left: 0px;
     justify-content: space-between;
-    align-items: flex-end;
     bottom: 0;
+    max-width: 100%;
 }
 .footer__card:first-child{
     margin-left: 0;
 }
 .photograthy-pic {
-    z-index: 100;
+    z-index: 120;
+    max-width: 100%;
+    margin-top: 60%;
+   
+}
+.art-pic {
+    z-index: 110;
+    max-width: 130%;
+    margin-left: -50%;
+    
+}
+.drawing-pic {
+    z-index: 110;
+    max-width: 100%;
+    margin-top: 30%;
+    margin-left: -60%;
+}
+.digital-pic {
+    z-index: 110;
+    max-width: 110%;
+    margin-left: -90%;
+    margin-top: 50%;
+   
 }
 .painting-pic {
-    z-index: 100;
+    z-index: 110;
+    max-width: 160%;
+    margin-top: 30%;
+    margin-left: -100%;
+    
 }
 .design-pic {
-    z-index: 100;
+    z-index: 110;
+    max-width: 130%;
+    margin-top: 60%;
+    margin-left: -50%;
+    
+}
+.craft-pic {
+    z-index: 0;
+    max-width: 150%;
+    margin-top: 0%;
+    margin-left: -48%;
+    
 }
 .sculpture-pic {
     z-index: 100;
+    max-width: 100%;
+    margin-top: 60%;
+    margin-left: -20%;
+    
 }
 .card3D-pic {
-    z-index: 120;
+    z-index: 90;
+    max-width: 150%;
+    margin-top: 10%;
+    margin-left: -30%;
+    
+}
+.illustration-pic {
+    z-index: 100;
+    max-width: 100%;
+    margin-top: 50%
+    
 }
 #myVideo {
     position: fixed;
@@ -416,16 +465,16 @@ body {
     z-index: -100;
 }
 .anim-typewriter{
-  animation: typewriter 3s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+animation: typewriter 3s steps(44) 1s 1 normal both,
+blinkTextCursor 500ms steps(44) infinite normal;
 }
 @keyframes typewriter{
-  from{width: 0;}
-  to{width: 670px;}
+from{width: 0;}
+to{width: 670px;}
 }
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
 }
 .line-text {
     position: relative; 
