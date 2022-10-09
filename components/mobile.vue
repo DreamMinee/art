@@ -6,24 +6,24 @@
             </a>
         </div>
         <div class="header__date-and-time-mobile">
-            <div>Start</div>
-            <div>31 december</div>
+            <div class="header__start">Start</div>
+            <div class="header__date">31 december</div>
         </div>
     </header>
-        <main class="main container">
-            <section class="intro-mobile">
-                    <h1 class="intro__title-mobile">
+        <main class="main container--mobile">
+            <section class="main__header--mobile">
+                    <h1 class="main__title--mobile">
                         Outstanding community
                     </h1>
-                    <p class="intro__subtitle-mobile">
+                    <p class="main__subtitle--mobile">
                         for creative people
                     </p>
             </section>
-            <section class="registration-form">
-                <div class="users-form-mobile">
+            <section class="registration-form--mobile">
+                <div class="users-form--mobile">
                      <div class="registration-form__label">
                         <p><span>Incredible benefits</span> for early students and teachers</p>
-                    </div>   
+                    </div>
                     <div class="tabs-wrapper">
                         <div class="tab-student active">
                             I'am student
@@ -35,11 +35,11 @@
                     <div class="content-wrapper">
                         <input type="email" placeholder="Email">        
                     </div> 
-                    <button type="button">
+                    <button class="button__submit" type="button">
                         Get a benefit <img src="/images/present-icon.svg" alt="Present-icon">
                     </button> 
                 </div> 
-                <div class="counter-mobile">
+                <div class="counter--mobile">
                     <div class="counter__number">
                         Places left 986! 
                     </div>
@@ -47,30 +47,30 @@
             </section>
         </main>
 
-        <footer class="footer-mobile">
-            <div class="footer__cards-mobile">
-                <div class="footer__card-mobile redcard-mobile-pic">
+        <footer class="footer--mobile">
+            <div class="footer__cards--mobile">
+                <div class="footer__card--mobile footer__card-1--mobile">
                     <img src="/images/redcard-mobile-pic.svg" alt="Red">             
                 </div> 
-                <div class="footer__card-mobile digital-mobile-pic">
+                <div class="footer__card--mobile footer__card-2--mobile">
                     <img src="/images/digital-mobile-pic.svg" alt="Digital"> 
                 </div>
-                <div class="footer__card-mobile card3D-mobile-pic">
+                <div class="footer__card--mobile footer__card-3--mobile">
                     <img src="/images/card3D-mobile-pic.svg" alt="3D"> 
                 </div>
-                <div class="footer__card-mobile painting-mobile-pic">
+                <div class="footer__card--mobile footer__card-4--mobile">
                     <img src="/images/painting-mobile-pic.svg" alt="Painting"> 
                 </div>
-                <div class="footer__card-mobile art-mobile-pic">
-                    <img src="/images/art-mobile-pic.svg" alt="Art"> 
+                <div class="footer__card--mobile footer__card-5--mobile">
+                    <img src="/images/art-mobile-pic.svg" alt="Art">
                 </div>
-                <div class="footer__card-mobile sculpture-mobile-pic">
+                <div class="footer__card--mobile footer__card-6--mobile">
                     <img src="/images/sculpture-mobile-pic.svg" alt="Sculpture"> 
                 </div>
-                <div class="footer__card-mobile craft-mobile-pic">
+                <div class="footer__card--mobile footer__card-7--mobile">
                     <img src="/images/craft-mobile-pic.svg" alt="Craft"> 
                 </div>
-                <div class="footer__card-mobile darkcard-mobile-pic">
+                <div class="footer__card--mobile footer__card-8--mobile">
                     <img src="/images/darkcard-mobile-pic.svg" alt="Dark"> 
                 </div>
             </div>
@@ -164,7 +164,7 @@ body {
     box-sizing: inherit;
 
 }
-.container {
+.container--mobile {
     max-width: 100%;
     margin: auto 40px;
 }
@@ -188,12 +188,8 @@ body {
     line-height: 32px;
     color: #fff;
 }
-.header__date-and-time--start {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;;
-}
-.intro-mobile {
+
+.main__header--mobile {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -201,7 +197,7 @@ body {
     flex-direction: column;
 }
 
-.intro__title-mobile {
+.main__title--mobile {
     width: 80%;
     font-weight: 500;
     font-size: 40px;
@@ -211,7 +207,7 @@ body {
     text-align: center;
 }
 
-.intro__subtitle-mobile {
+.main__subtitle--mobile {
     font-size: 16px;
     line-height: 32px;
     color: #fff;
@@ -219,10 +215,9 @@ body {
     width: 80%;
     font-weight: 400;
 }
-.registration-form {
+.registration-form--mobile {
     display: flex;
     justify-content: left;
-    align-items: left;
     background-color: transparent;
     flex-direction: column;
 }
@@ -237,17 +232,14 @@ body {
 .registration-form__label span {
     color: #76B525;
 }
-.users-form-mobile {
+.users-form--mobile {
     background:rgba(18, 18, 18, 0.7);
     height: 284px;
     border-radius: 25px 25px 0 0;
     padding: 20px;
-    
-} 
-.counter-wrapper {
-    border-radius: 0px;
-}   
-.counter-mobile {
+}
+
+.counter--mobile {
     background: #121212;
     display: flex;
     height: 60px;
@@ -259,18 +251,12 @@ body {
     line-height: 16px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-family: "Onest Regular";
+    font-family: "Onest Regular", "Arial", sans-serif;
     flex-direction: column;
     border-radius: 0px 0px 24px 24px;
     
 }
-.counter__label {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+
 .tabs-wrapper {
     width: calc(100% - 8px);
     display: flex;
@@ -352,7 +338,7 @@ body {
     outline: none !important;
     border-color: #414141;
 }
-.users-form-mobile button {
+.users-form--mobile button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -373,14 +359,14 @@ body {
 .users-form button:hover {
     background-color:#629223 ;
 }
-.footer-mobile {
+.footer--mobile {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 
 
 }
-.footer__cards-mobile {
+.footer__cards--mobile {
     position: absolute;
     bottom: 0px;
     display: flex;
@@ -389,7 +375,7 @@ body {
     justify-content: flex-start;
    
 }
-.footer__card-mobile {
+.footer__card--mobile {
     position: absolute;
     bottom: 0;
     display: flex;
@@ -397,39 +383,39 @@ body {
     justify-content: flex-start;
     align-items: flex-end;
 }
-.redcard-mobile-pic {
+.footer__card-1--mobile {
     left: -10px;
 }
-.digital-mobile-pic {
+.footer__card-2--mobile {
     left: -10px ;
     z-index: 100;
 }
-.card3D-mobile-pic {
+.footer__card-3--mobile {
     left: 10px;
     z-index: 80;   
 }
-.painting-mobile-pic {
+.footer__card-4--mobile {
     left: 75px;
     z-index: 90;
 }
-.art-mobile-pic {
+.footer__card-5--mobile {
     right: 80px;
     z-index: 70;
 }
-.sculpture-mobile-pic {
+.footer__card-6--mobile {
     right: -5px;
     z-index: 100;
 }
-.craft-mobile-pic {
+.footer__card-7--mobile {
     right: -5px;
     z-index: 80;
 }
-.darkcard-mobile-pic {
+.footer__card-8--mobile {
     right: -10px;
     z-index: -1;
 }
 
-.footer__card:first-child{
+.footer__card--mobile:first-child{
     margin-left: 0;
 }
 
@@ -440,24 +426,5 @@ body {
     min-width: 100%;
     z-index: -100;
 }
-.anim-typewriter{
-  animation: typewriter-mobile 3s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes typewriter-mobile{
-  from{width: 0;}
-  to{width: 100vw;}
-}
-@keyframes blinkTextCursor-mobile {
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
-}
-.line-text {
-    position: relative; 
-    border-right: 4px solid rgba(255,255,255,.75);
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);    
-}
+
 </style>
